@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <button  onclick="click()"  id="btn">click button</button>
+    <script>        
+    
+    var click = document.getElementById("btn");
+   
+    btn.onmouseenter = function(){
+            window.alert( "მოხდა მაუსის მიტანა ღილაკე");
+   };
+    btn.onmouseleave = function(){
+        window.alert("მოხდა გატანა");
+       };
+        function click(){
+            if(btn.innerHTML ==="click button"){
+                window.alert("მოხდა დაკლიკება");
+                btn.innerHTML= "clicked"
+            }else{
+                btn.innerHTML = "click button"
+            };
+        };
+      
+    </script>
+</body>
+</html>
